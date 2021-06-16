@@ -1,9 +1,9 @@
 
-(function (){
-  // STEP 3: Create an object, called 'helloSpeaker' to which you will attach
-  // the "speak" method and which you will expose to the global context
-  // See Lecture 52, part 1
-  // var helloSpeaker =
+(function (window){
+  var helloSpeaker = {};
+  helloSpeaker.speak = function(){};
+  window.helloGreeting = helloSpeaker;
+
 
   // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
   var speakWord = "Hello";
@@ -20,6 +20,6 @@
   // See Lecture 52, part 2
   // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
   // xxxx.xxxx = helloSpeaker;
-})();
+})(window);
 
 
