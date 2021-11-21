@@ -1,14 +1,12 @@
-
-(function (window){
+(function (window) {
   // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
-  var speakWord = "Hello";
+  const speakWord = "Hello";
 
-  var helloSpeaker = {};
+  const helloSpeaker = {};
 
-  helloSpeaker.speak = function(name){
+  helloSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   };
 
   window.helloSpeaker = helloSpeaker;
-
 })(window);
